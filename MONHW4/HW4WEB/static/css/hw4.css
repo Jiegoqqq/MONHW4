@@ -1,0 +1,14 @@
+.my-container { 
+    width: 90%; /* 這裡的寬度可以根據需要進行調整 */
+    margin: 0 auto; 
+    display: block;
+    justify-content: center;
+    align-items: center; 
+  }
+  .card {
+      /* Adjust card styles as needed */
+      width: 100%; /* Example width; modify as needed */
+    }
+  .centered {
+    text-align: center;
+  }

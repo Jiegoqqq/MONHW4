@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Strategy List {% endblock %}
+{% block content %}
+{% csrf_token %}
+<script>csrf_token= "{{ csrf_token }}"</script>
+
+<!-- DataTables -->
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>  
+<div class="card-footer text-muted">
+    <div class="to_center"> 
+    <select id="select">
+        <option>請選擇策略</option>
+        <option>HWˋ</option>
+
+    </select>
+</div>
+</div>
+<div class="card-footer text-muted">
+    <div class="to_center">
+    <button class="search_button" id="submit">search</button>
+    </div>
+</div>
+<script src="{% static 'js/total_list.js' %}"></script>
+{% endblock %}
